@@ -5,12 +5,12 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Crop Chemicals - Premium Agricultural Solutions',
+  title: 'NBT',
   description: 'Leading provider of innovative agricultural chemicals, fertilizers, and farming solutions for enhanced crop productivity and sustainable agriculture.',
   keywords: 'agriculture, fertilizers, pesticides, farming, crop chemicals, agricultural solutions',
   authors: [{ name: 'Crop Chemicals' }],
   openGraph: {
-    title: 'Crop Chemicals - Premium Agricultural Solutions',
+    title: 'Natchiyar Bio Tech',
     description: 'Leading provider of innovative agricultural chemicals and farming solutions',
     type: 'website',
   },
