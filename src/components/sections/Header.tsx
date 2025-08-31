@@ -104,7 +104,7 @@ const Header = () => {
                 </div>
               </div>
               <div>
-                <span className="text-2xl font-bold text-cyan-400">Crop</span>
+                <span className="text-2xl font-bold text-cyan-400">NBT</span>
                 <span className="text-lg font-normal text-green-400 block -mt-1">Chemicals</span>
               </div>
             </div>
