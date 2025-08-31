@@ -30,7 +30,7 @@ const Header = () => {
         { name: 'OILS, SPREADERS & DISINFECTANTS', href: '/products/oils-disinfectants' },
       ]
     },
-    { name: 'GALLERY', href: '#gallery' },
+    { name: 'GALLERY', href: '#products' },
     { name: 'CONTACT', href: '#contact' },
   ];
 
