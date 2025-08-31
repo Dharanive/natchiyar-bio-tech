@@ -98,7 +98,7 @@ const Header = () => {
 <div className="flex items-start">
   <div className="relative -ml-8">
     <img 
-      src="/images/NBT.png" 
+      src="/images/NBTLOGO.png" 
       alt="NBT Chemicals Logo"
       className="w-62 h-62 mt-4 object-contain"
     />
