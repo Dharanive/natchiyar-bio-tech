@@ -95,19 +95,16 @@ const Header = () => {
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-green-500 rounded-full flex items-center justify-center shadow-lg">
-                  <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <span className="text-2xl font-bold text-cyan-400">NBT</span>
-                <span className="text-lg font-normal text-green-400 block -mt-1">Chemicals</span>
-              </div>
-            </div>
+<div className="flex items-start">
+  <div className="relative -ml-8">
+    <img 
+      src="/images/NBT.png" 
+      alt="NBT Chemicals Logo"
+      className="w-62 h-62 mt-4 object-contain"
+    />
+  </div>
+</div>
+
 
             {/* Desktop Navigation + CTA Button */}
             <div className="hidden lg:flex items-center space-x-8">
