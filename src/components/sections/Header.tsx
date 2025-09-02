@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -97,9 +98,11 @@ const Header = () => {
             {/* Logo */}
 <div className="flex items-start">
   <div className="relative -ml-8">
-    <img 
+    <Image 
       src="/images/NBTLOGO.png" 
       alt="NBT Chemicals Logo"
+      width={248}
+      height={248}
       className="w-62 h-62 mt-4 object-contain"
     />
   </div>

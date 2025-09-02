@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import Image from 'next/image';
 
 export type LogoItem =
   | {
@@ -90,7 +91,7 @@ const useImageLoader = (
   onLoadRef.current = onLoad;
 
   useEffect(() => {
-    const images = seqRef.current?.querySelectorAll('img') ?? [];
+    const images = seqRef.current?.querySelectorAll('img, [data-nextjs-image]') ?? [];
 
     if (images.length === 0) {
       onLoadRef.current();
@@ -107,7 +108,7 @@ const useImageLoader = (
 
     images.forEach(img => {
       const htmlImg = img as HTMLImageElement;
-      if (htmlImg.complete) {
+      if (htmlImg.complete || htmlImg.hasAttribute('data-nextjs-image')) {
         handleImageLoad();
       } else {
         htmlImg.addEventListener('load', handleImageLoad, { once: true });
@@ -121,7 +122,7 @@ const useImageLoader = (
         img.removeEventListener('error', handleImageLoad);
       });
     };
-  }, []);
+  }, [seqRef]);
 };
 
 const useAnimationLoop = (
@@ -291,7 +292,11 @@ export const LogoLoop = React.memo<LogoLoopProps>(
             {item.node}
           </span>
         ) : (
-          <img
+          <Image
+            src={item.src}
+            alt={item.alt ?? ''}
+            width={item.width || 100}
+            height={item.height || 100}
             className={cx(
               'h-[var(--logoloop-logoHeight)] w-auto block object-contain',
               '[-webkit-user-drag:none] pointer-events-none',
@@ -300,16 +305,9 @@ export const LogoLoop = React.memo<LogoLoopProps>(
               scaleOnHover &&
                 'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
             )}
-            src={item.src}
-            srcSet={item.srcSet}
-            sizes={item.sizes}
-            width={item.width}
-            height={item.height}
-            alt={item.alt ?? ''}
             title={item.title}
             loading="lazy"
-            decoding="async"
-            draggable={false}
+            data-nextjs-image
           />
         );
 
