@@ -8,63 +8,75 @@ const About = () => {
   const statsLogos = [
     {
       node: (
-        <div className="flex flex-col items-center min-w-[120px]">
-          <div className="text-6xl mb-1">🧪</div>
-          <div className="text-2xl font-bold text-green-600 mb-1">250+</div>
-          <div className="text-lg text-gray-600 font-medium text-center">Products</div>
+        <div className="flex items-center justify-center min-w-[150px] h-[125px] mt-4">
+          <img
+            src="/images/AGMark.png"
+            alt="Company Logo 1"
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
       ),
-      title: "250+ Products"
+      title: "Company Logo 1",
     },
     {
       node: (
-        <div className="flex flex-col items-center min-w-[120px]">
-          <div className="text-6xl mb-1">👥</div>
-          <div className="text-2xl font-bold text-green-600 mb-1">3500+</div>
-          <div className="text-lg text-gray-600 font-medium text-center">Happy Farmers</div>
+        <div className="flex items-center justify-center min-w-[120px] h-[100px]">
+          <img
+            src="/images/Bharat.png"
+            alt="Company Logo 2"
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
       ),
-      title: "3500+ Happy Farmers"
+      title: "Company Logo 2",
     },
     {
       node: (
-        <div className="flex flex-col items-center min-w-[120px]">
-          <div className="text-6xl mb-1">🌾</div>
-          <div className="text-2xl font-bold text-green-600 mb-1">300000+</div>
-          <div className="text-lg text-gray-600 font-medium text-center">Hectares</div>
+        <div className="flex items-center justify-center min-w-[120px] h-[100px]">
+          <img
+            src="/images/LogoISO.jpg"
+            alt="Company Logo 3"
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
       ),
-      title: "300000+ Hectares"
+      title: "Company Logo 3",
     },
     {
       node: (
-        <div className="flex flex-col items-center min-w-[120px]">
-          <div className="text-6xl mb-1">💰</div>
-          <div className="text-2xl font-bold text-green-600 mb-1">10L+</div>
-          <div className="text-lg text-gray-600 font-medium text-center">Revenue</div>
+        <div className="flex items-center justify-center min-w-[150px] h-[125px] mt-4">
+          <img
+            src="/images/India-Organic.jpg"
+            alt="Company Logo 4"
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
       ),
-      title: "10L+ Revenue"
+      title: "Company Logo 4",
     },
     {
       node: (
-        <div className="flex flex-col items-center min-w-[120px]">
-          <div className="text-6xl mb-1">🏪</div>
-          <div className="text-2xl font-bold text-green-600 mb-1">500+</div>
-          <div className="text-lg text-gray-600 font-medium text-center">Retailers</div>
+        <div className="flex items-center justify-center min-w-[150px] h-[125px] mt-4">
+          <img
+            src="/images/landscapinglogo.jpg"
+            alt="Company Logo 5"
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
       ),
-      title: "500+ Retailers"
+      title: "Company Logo 5",
     },
     {
       node: (
-        <div className="flex flex-col items-center min-w-[120px]">
-          <div className="text-6xl mb-1">🚚</div>
-          <div className="text-2xl font-bold text-green-600 mb-1">150+</div>
-          <div className="text-lg text-gray-600 font-medium text-center">Distributors</div>
+        <div className="flex items-center justify-center min-w-[120px] h-[100px]">
+          <img
+            src="/images/inf.png"
+            alt="Company Logo 6"
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
       ),
-      title: "150+ Distributors"
+      title: "Company Logo 6",
     },
   ];
 
@@ -210,7 +222,7 @@ const About = () => {
             pauseOnHover={true}
             fadeOut={true}
             scaleOnHover={false}
-            ariaLabel="Company statistics and achievements"
+            ariaLabel="Partner company logos"
           />
         </div>
       </div>
